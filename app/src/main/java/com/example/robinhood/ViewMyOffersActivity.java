@@ -80,14 +80,14 @@ public class ViewMyOffersActivity extends AppCompatActivity {
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Toast.makeText(ViewMyOffersActivity.this, "Done Querying...", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(ViewMyOffersActivity.this, "Done Querying...", Toast.LENGTH_SHORT).show();
                 offersIDs.clear();
                 if(dataSnapshot.exists()){
                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                         offersIDs.add(snapshot.getKey());
                     }
                 } else {
-                    Toast.makeText(ViewMyOffersActivity.this, "No snapshot?", Toast.LENGTH_SHORT).show();
+                //    Toast.makeText(ViewMyOffersActivity.this, "No snapshot?", Toast.LENGTH_SHORT).show();
                 }
                 doneFetchingNames();
             }

@@ -15,7 +15,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void clickNGORequests(View view) {
-        Toast.makeText(this, "NGO Requests", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, NGORequestsActivity.class));
     }
 
     public void clickMyOffers(View view) {

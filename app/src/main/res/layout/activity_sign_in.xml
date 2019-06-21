@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimaryDark">
 
     <LinearLayout
         android:orientation="vertical"
@@ -67,7 +67,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
 
-            android:textColor="#288DFF"
+            android:textColor="@color/colorTextLink"
             android:text="Create an Account"
             android:textStyle="bold"
             android:gravity="center"
