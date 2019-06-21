@@ -19,20 +19,18 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void clickMyOffers(View view) {
-        Toast.makeText(this, "My Offers", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, MyOffersActivity.class));
     }
 
     public void clickSettings(View view) {
-        Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, SettingsActivity.class));
     }
 
     public void clickInformation(View view) {
-        Toast.makeText(this, "Information", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, InformationActivity.class));
     }
 
     public void clickNewOffer(View view) {
-        Toast.makeText(this, "New Offer", Toast.LENGTH_SHORT).show();
         Intent newOfferIntent = new Intent(this, AdEditorActivity.class);
         newOfferIntent.putExtra("OFFER_ID", "NO_OFFER");
         startActivity(newOfferIntent);
