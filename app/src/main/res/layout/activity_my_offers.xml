@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOffersActivity"
+    android:background="@color/colorPrimaryDark">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="48dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_robinhood"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robinhood"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textSize="24dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="32dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:paddingTop="24dp"
+                android:drawableTop="@drawable/ic_active"
+                android:text="Active Offers"
+                android:onClick="clickActiveOffers"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:paddingTop="24dp"
+                android:drawableTop="@drawable/ic_inactive"
+                android:text="Inactive Offers"
+                android:onClick="clickInactiveOffers"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage your offers from here"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textSize="24dp"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

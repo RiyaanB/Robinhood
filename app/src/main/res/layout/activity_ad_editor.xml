@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter the necessary details about what you are offering"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a category that describes this offer"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/spn_category"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            ></Spinner>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer Title"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+
+        <EditText android:id="@+id/input_title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:hint="Eg: Teen Schoolbag"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer Description"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+
+        <EditText android:id="@+id/input_description"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:hint="Eg: Blue color, in good condition"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer is Active?"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+
+        <CheckBox
+
+            android:id="@+id/cb_active"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please also enter the necessary contact details:"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First name"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+
+        <EditText android:id="@+id/input_name"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:hint="Enter your Full Name"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+
+        <EditText android:id="@+id/input_phone"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="number"
+            android:hint="Enter Phone Number (preferably WhatsApp)"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/et_address"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:hint="Enter the Pick-up Address"
+            android:textColor="@color/colorAccent"/>
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_done_details"
+            android:background="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="  Done  "
+            android:onClick="clickDone"/>
+
+    </LinearLayout>
+
+</ScrollView>
