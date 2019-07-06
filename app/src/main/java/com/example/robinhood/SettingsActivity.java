@@ -87,10 +87,6 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
     FirebaseDatabase database;

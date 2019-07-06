@@ -38,28 +38,12 @@ public class ViewMyOffersActivity extends AppCompatActivity {
     FirebaseUser currentUser;
     FirebaseAuth mAuth;
     FirebaseDatabase database;
-    DatabaseReference currentUserOffers;
 
     int length;
     int downloaded;
 
-    ArrayList<String> categories;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        categories = new ArrayList<>();
-        categories.add("Books");
-        categories.add("Bags");
-        categories.add("Stationary");
-        categories.add("Sports");
-        categories.add("Games");
-        categories.add("Clothes");
-        categories.add("Electronics");
-
-
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_up);
 
@@ -73,7 +57,7 @@ public class ViewMyOffersActivity extends AppCompatActivity {
         offersIDs = new ArrayList<>();
         offers = new ArrayList<>();
 
-        Toast.makeText(this, "Querying...", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Querying...", Toast.LENGTH_SHORT).show();
 
         Query query = FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid()).child("Offers").orderByChild("Status").equalTo(activeAds);
 
@@ -186,7 +170,7 @@ public class ViewMyOffersActivity extends AppCompatActivity {
             OfferClass current = offers.get(position);
             holder.title.setText(current.title);
             holder.phone.setText(current.phone);
-            holder.category.setText(categories.get(current.category));
+            holder.category.setText(CategoriesClass.categories[current.category]);
             holder.description.setText(current.description);
             return convertView;
         }
