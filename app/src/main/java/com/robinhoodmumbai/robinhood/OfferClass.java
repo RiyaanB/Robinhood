@@ -1,12 +1,11 @@
-package com.example.robinhood;
+package com.robinhoodmumbai.robinhood;
 
-
-public class RequestClass {
+public class OfferClass {
     String title, description, name, phone, address;
     int category;
     boolean active;
 
-    public RequestClass(String title, String description, String name, String phone, String address, int category, boolean active) {
+    public OfferClass(String title, String description, String name, String phone, String address, int category, boolean active) {
         this.title = title;
         this.description = description;
         this.name = name;

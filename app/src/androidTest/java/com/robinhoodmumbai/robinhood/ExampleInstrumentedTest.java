@@ -1,4 +1,4 @@
-package com.example.robinhood;
+package com.robinhoodmumbai.robinhood;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.robinhood", appContext.getPackageName());
+        assertEquals("com.example.com.robinhoodmumbai.com.robinhoodmumbai.com.robinhoodmumbai.com.robinhoodmumbai.robinhood", appContext.getPackageName());
     }
 }

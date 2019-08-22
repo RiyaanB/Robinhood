@@ -1,4 +1,4 @@
-package com.example.robinhood;
+package com.robinhoodmumbai.robinhood;
 
 import org.junit.Test;
 

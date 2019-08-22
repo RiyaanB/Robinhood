@@ -1,4 +1,4 @@
-package com.example.robinhood;
+package com.robinhoodmumbai.robinhood;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;

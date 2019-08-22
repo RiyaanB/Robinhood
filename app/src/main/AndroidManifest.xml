@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.robinhood">
+    package="com.robinhoodmumbai.robinhood">
 
     <application
         android:allowBackup="true"
@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewMyOffersActivity"></activity>
-        <activity android:name=".AdEditorActivity" />
-        <activity android:name=".InformationActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".MyOffersActivity" />
-        <activity android:name=".NGORequestsActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".StartUpActivity">
+        <activity android:name="com.robinhoodmumbai.robinhood.ViewMyOffersActivity"></activity>
+        <activity android:name="com.robinhoodmumbai.robinhood.AdEditorActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.InformationActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.SettingsActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.MyOffersActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.NGORequestsActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.HomeActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.SignUpActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.SignInActivity" />
+        <activity android:name="com.robinhoodmumbai.robinhood.StartUpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

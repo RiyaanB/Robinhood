@@ -1,4 +1,4 @@
-package com.example.robinhood;
+package com.robinhoodmumbai.robinhood;
 
 public class CategoriesClass {
 
