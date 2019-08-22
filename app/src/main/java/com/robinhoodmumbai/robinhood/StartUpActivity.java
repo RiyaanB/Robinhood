@@ -31,12 +31,12 @@ public class StartUpActivity extends AppCompatActivity {
     private void updateUI(final FirebaseUser currentUser) {
         Intent userIntent;
         if(currentUser == null) {
-            Toast.makeText(this, "There is no user", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(this, "There is no user", Toast.LENGTH_SHORT).show();
             userIntent = new Intent(this, SignInActivity.class);
             startActivity(userIntent);
         }
         else {
-            Toast.makeText(this, "There is a User", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(this, "There is a User", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(StartUpActivity.this, HomeActivity.class));
         }
         finish();

@@ -56,13 +56,13 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     public void clickLinkSignUp(View view) {
-        Toast.makeText(this, "Sign Up", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Sign Up", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, SignUpActivity.class));
         finish();
     }
 
     public void clickGoogleSignIn(View view) {
-        Toast.makeText(this, "Google Sign In", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Google Sign In", Toast.LENGTH_SHORT).show();
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()

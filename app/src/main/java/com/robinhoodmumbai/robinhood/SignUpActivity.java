@@ -33,7 +33,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void clickLinkSignUp(View view) {
-        Toast.makeText(this, "Sign Up", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Sign Up", Toast.LENGTH_SHORT).show();
         String email = ((EditText)findViewById(R.id.input_email)).getText().toString();
         String pass = ((EditText)findViewById(R.id.input_password)).getText().toString();
         mAuth.createUserWithEmailAndPassword(email, pass)
